@@ -1,0 +1,9 @@
+ # https://www.codewars.com/kata/5a4138acf28b82aa43000117/python
+def adjacent_element_product(array):
+    max = -99999999999999999999999999999
+    if len(array) == 2:
+        return array[0] * array[1]
+    for i in range(len(array) - 1):
+        if array[i] * array[i + 1] > max:
+            max = array[i] * array[i + 1]
+    return max
