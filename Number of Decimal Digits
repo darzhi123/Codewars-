@@ -1,0 +1,4 @@
+# https://www.codewars.com/kata/58fa273ca6d84c158e000052/python
+def digits(n):
+    return len(str(n))
+# we need to know lenght of numbers in -n-, but we can't use len on =int= types, so we simply convert int(n) into str(n) and then we are using string methon len(n), that returning the lenght of str type in ().
