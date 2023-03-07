@@ -1,0 +1,8 @@
+#https://www.codewars.com/kata/5977618080ef220766000022/python
+def usdcny(usd):
+    conv_rate_ncy_to_usd = 6.75 #float-type
+    CNY = str(usd * conv_rate_ncy_to_usd)
+    parting = CNY.partition(".")
+    if len(parting[2]) == 1:
+        CNY += "0"
+    return f"{CNY} Chinese Yuan"
