@@ -1,0 +1,9 @@
+#https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036
+def to_csv_text(array):
+    result = []
+    for i in range(len(array)):
+        if i!= len(array)-1:
+            result.append(",".join([str(w) for w in array[i]]) + "\n")
+        else:
+            result.append(",".join([str(w) for w in array[i]]))
+    return "".join(result)
