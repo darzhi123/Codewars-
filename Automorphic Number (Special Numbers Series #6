@@ -1,0 +1,7 @@
+# https://www.codewars.com/kata/5a58d889880385c2f40000aa/
+def automorphic(n):
+    num = str(n)
+    num2 = str(n**2)
+    if num2[len(num2) - len(num):] == num[:] :
+        return "Automorphic"
+    return "Not!!"
